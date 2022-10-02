@@ -11,5 +11,5 @@ Rails.application.routes.draw do
   # ?About route with get request to the about page
   # ? static about pages action (#) in pages controller 
   get 'about', to: 'pages#about'
-
+  resources :articles, only: [:show]
 end
