@@ -1,6 +1,4 @@
 Rails.application.routes.draw do
-  # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
-
   # Defines the root path route ("/")
   # root "articles#index"
   # * We sent the root route to the application controller
@@ -10,6 +8,8 @@ Rails.application.routes.draw do
   root 'pages#home'
   # ?About route with get request to the about page
   # ? static about pages action (#) in pages controller 
+  
   get 'about', to: 'pages#about'
-  resources :articles, only: [:show]
+  # ?would expect a show and index action in the articles_controller
+  resources :articles, only: [:show, :index]
 end
