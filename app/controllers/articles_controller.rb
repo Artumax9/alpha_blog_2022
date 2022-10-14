@@ -8,7 +8,41 @@ class ArticlesController < ApplicationController
    
   def index
     @articles = Article.all
-    #@articles.each {|article| puts article}
+  end
+
+  def new
+    @article = Article.new
+  end
+  
+  def edit
+    #binding.break replace of byebug in rails 7
+    #https://blog.saeloun.com/2021/09/29/rails-7-ruby-debug-replaces-byebug.html
+    @article = Article.find(params[:id])
+  end
+
+  def create
+    #render plain: params[:article]
+    #@article = Article.new(params[:article])
+    #ActiveModel::ForbiddenAttributesError
+    @article = Article.new(params.require(:article).permit(:title, :description))
+    #render plain: @article.inspect
+    if @article.save
+      flash[:notice] = "Article was succesfully created."
+      #show article
+      #redirect_to article_path(@article)
+      redirect_to @article
+    else
+      render 'new'
+    end    
+  end
+  def update
+    @article = Article.find(params[:id])
+    if @article.update(params.require(:article).permit(:title, :description))
+      flash[:notice] = "Article was succesfully updated."
+      redirect_to article_path(@article)
+    else
+      render 'edit'
+    end
   end
 
 end

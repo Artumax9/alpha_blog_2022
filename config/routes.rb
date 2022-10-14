@@ -11,5 +11,5 @@ Rails.application.routes.draw do
   
   get 'about', to: 'pages#about'
   # ?would expect a show and index action in the articles_controller
-  resources :articles, only: [:show, :index]
+  resources :articles, only: [:show, :index, :new, :create, :edit, :update]
 end
