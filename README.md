@@ -11,6 +11,15 @@ The Front End : Show an article
 -Model View/db table
 - View
 
+
+The front-end: Destroying (deleting) articles
+The front-end: Layout links
+
+REST - Representational state transfer - mapping HTTP verbs (get, post, put/patch, delete) to CRUD actions
+
+resources provides REST-ful routes to Rails resources
+
+
 Things you may want to cover:
 
 * Ruby version Rails 7.0.3.1

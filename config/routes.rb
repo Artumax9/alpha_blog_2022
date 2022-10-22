@@ -6,10 +6,12 @@ Rails.application.routes.draw do
   # *command rails generate pages controller 
 
   root 'pages#home'
+
   # ?About route with get request to the about page
   # ? static about pages action (#) in pages controller 
-  
-  get 'about', to: 'pages#about'
+    get 'about', to: 'pages#about'
+    
   # ?would expect a show and index action in the articles_controller
-  resources :articles, only: [:show, :index, :new, :create, :edit, :update]
+  resources :articles 
+  #, only: [:show, :index, :new, :create, :edit, :update, :destroy]
 end
