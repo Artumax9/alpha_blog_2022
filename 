@@ -1,0 +1,41 @@
+[33mcommit 43d2f119886d79f82f797d987ee1b66bc82daeef[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;31mheroku/main[m[33m)[m
+Author: Arturo Paredes <arturojp18@gmail.com>
+Date:   Sat Oct 22 21:36:24 2022 -0300
+
+    make app production ready
+
+[33mcommit 8981f559c74a676b1ed58a79d31af577b1d308a0[m[33m ([m[1;31morigin/main[m[33m)[m
+Author: Arturo Paredes <arturojp18@gmail.com>
+Date:   Sat Oct 22 20:46:51 2022 -0300
+
+    Fixing the app code by cleaning redundancy line codes (DRY)
+
+[33mcommit a035ada22bada67f88cea1efc7ab53561f843ac2[m
+Author: Arturo Paredes <arturojp18@gmail.com>
+Date:   Fri Oct 14 00:13:48 2022 -0300
+
+    Add new, create, edit and update actions to the articles controller and its views
+
+[33mcommit dcca990d5141098cbd227b690887797ef7b1dfee[m
+Author: Arturo Paredes <arturojp18@gmail.com>
+Date:   Wed Oct 5 22:11:32 2022 -0300
+
+    Add articles listing feature
+
+[33mcommit 845c38c909c30de505731e4e97935496ec56491b[m
+Author: Arturo Paredes <arturojp18@gmail.com>
+Date:   Sat Oct 1 22:54:04 2022 -0300
+
+    create a controller articles and show articles details
+
+[33mcommit 0e6356145e9684ef9e4ab4ba25da3d79cb7cf4f2[m
+Author: Arturo Paredes <arturojp18@gmail.com>
+Date:   Mon Sep 19 22:23:41 2022 -0300
+
+    Run migration file to create articles table and adds columns title, description, created_at and updated_at
+
+[33mcommit 31e99eb59327269edddac4a94dd48b426da9312c[m
+Author: Arturo Paredes <arturojp18@gmail.com>
+Date:   Sat Aug 27 09:02:37 2022 -0300
+
+    Alpha blog first commit with home and about page
